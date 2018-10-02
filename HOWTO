@@ -1,0 +1,9 @@
+- preparation:
+    clone: git://bear.alienbase.nl/liveslak.git
+    copy config file
+
+- build:
+    sudo ./make_slackware_live.sh
+
+- install:
+    sudo sh iso2usb.sh -i ../ISO/image.iso -o /dev/sdb -c 70%
